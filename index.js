@@ -1,7 +1,7 @@
 let exec = require('child_process').exec;
 let Service, Characteristic, Homebridge, Accessory;
 
-const PLUGIN_NAME 	= 'homebridge-adb';
+const PLUGIN_NAME 	= 'homebridge-adb-fire';
 const PLATFORM_NAME = 'HomebridgeADB';
 const LIMIT_RETRY 	= 5;
 
@@ -229,7 +229,7 @@ class ADBPlugin {
 					if(!err) {
 						if(state) {
 							// When it sleep, wake it up
-							exec(`adb -s ${this.ip} shell "input keyevent KEYCODE_WAKEUP"`, (err, stdout, stderr) => {
+							exec(`adb -s ${this.ip} shell "input keyevent KEYCODE_HOME"`, (err, stdout, stderr) => {
 								if(err) this.log.info(this.ip, "- Can't make device wakeup, or it's already awake");
 								else this.log.info(this.ip, "- Awake");
 
