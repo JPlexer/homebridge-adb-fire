@@ -446,8 +446,8 @@ class ADBPlugin {
 							stdout[0] = stdout[0].split(" ");
 							stdout[0] = stdout[0][4];
 
-							if(stdout[1].includes("Launcher") || stdout[1].substr(0, 13) == ".MainActivity" || stdout[1].includes("RecentsTvActivity")) stdout = this.inputs[0].id;
-							else stdout = stdout[0];
+							//if(stdout[1].includes("Launcher") || stdout[1].substr(0, 13) == ".MainActivity" || stdout[1].includes("RecentsTvActivity")) stdout = this.inputs[0].id;
+							stdout = stdout[0];
 						} else stdout = OTHER_APP_ID;
 
 
