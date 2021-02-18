@@ -1,5 +1,5 @@
 {
-	"name": "homebridge-adb",
+	"name": "homebridge-adb-fire",
 	"version": "1.1.5",
 	"description": "A simple homebridge plugin to control ADB enabled Android devices",
 	"main": "index.js",
@@ -21,7 +21,7 @@
 		"android",
 		"homekit"
 	],
-	"author": "dwaan",
+	"author": "jplexer",
 	"license": "MIT",
 	"bugs": {
 		"url": "https://github.com/dwaan/homebridge-adb/issues"
